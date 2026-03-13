@@ -1,0 +1,29 @@
+<DOCTYPE html>
+<html>
+<head>
+    <title>Vision Magazine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Vision Magazine</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/technology">Technology</a>
+            <a href="/lifestyle">Lifestyle</a>
+            <a href="/business">Business</a>
+            <a href="/work">Work</a>
+        </nav>
+    </header>
+
+    <div class="container">
+    {% for block article %} {% endblock}
+</div>
+
+<footer>
+    <p>@ 2026 Vision Magazine. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
